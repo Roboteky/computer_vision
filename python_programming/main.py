@@ -52,3 +52,24 @@ new_key = vehicles['price']
 print(f"the price of the car is {new_key}")
 
 #####################################################
+
+# starting with an empty dictionary
+
+cows = {}
+
+cows['color'] = 'black and white'
+
+cows['type'] = 'freshaian'
+
+print(cows)
+
+#modifying values in a dictionary:
+
+tiger = {"country": "siberia"}
+
+print(f"The tiger is from {tiger['country']}")
+
+tiger = {"country": "Kenya"}
+
+print(f"the tiger is now from {tiger['country']}")
+
