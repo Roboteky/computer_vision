@@ -73,3 +73,71 @@ tiger = {"country": "Kenya"}
 
 print(f"the tiger is now from {tiger['country']}")
 
+
+
+ # Alien's current speed
+
+alien_0 = {'X_position': 0, 'Y_position': 25, 'speed':'fast'}
+
+print(f"original position: {alien_0['X_position']}")
+
+if alien_0['speed'] == 'slow':
+    
+    x_increment = 1
+    
+elif alien_0['speed'] == 'medium':
+    
+    x_increment = 2
+    
+else:
+    
+    x_increment = 3
+    
+#The new position is old plus new position
+
+alien_0['X_position'] = alien_0['X_position'] + x_increment
+
+
+print(f"new position: {alien_0['X_position']}")
+
+#####################################################################
+
+alien_0 = {'color': 'green', 'points': 5}
+
+print(alien_0)
+
+del alien_0['points'] # Used to delete a key from a dictionary
+
+print(alien_0)
+
+
+# A dictionary of similar objects.
+
+# For instance you want to poll a number of people and ask them their best programming language.
+
+favorite_languages = {
+    
+    'jen':'python',
+    
+    'sarah':'C',
+    
+    'Edward':'Rust',
+    
+    'Phil':'Python'
+}
+
+language = favorite_languages['sarah']
+
+print(f"Sarah's favourite language is {language}")
+
+
+
+
+
+# Using get() to access values
+
+alien_0 = {'color': 'green', 'speed': 'slow'}
+
+point_value = alien_0.get('points', 'No point value assigned')
+
+print(point_value)
